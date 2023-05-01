@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Apr 30 13:27:27 UZT 2023","Sun Apr 30 13:27:34 UZT 2023","6658","data and email validation case","","","","","SHOULD return positive response in case a valid email and an Excel sheet are provided",""
