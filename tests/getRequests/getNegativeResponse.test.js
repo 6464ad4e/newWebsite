@@ -54,13 +54,13 @@ require("mocha-allure-reporter");
 
 describe("Submit Button Tests", () => {
   it("Happy path for a correct sheet and valid email", async () => {
-    let createString =
-      "GIVEN I am on the home page of CVM, \n" +
-      "WHEN I upload a correct sheet and click to submit, \n" +
-      "THEN I can get success";
-    if (allure._allure.getCurrentSuite()) {
-      allure.description(createString);
-    }
+    // let createString =
+    //   "GIVEN I am on the home page of CVM, \n" +
+    //   "WHEN I upload a correct sheet and click to submit, \n" +
+    //   "THEN I can get success";
+    // if (allure._allure.getCurrentSuite()) {
+    //   allure.description(createString);
+    // }
 
     fs.readFile("fixtures/sheets/valid-sheets.json", async (err, data) => {
       const response = await request("https://centura-nonprod-test1.apigee.net")
@@ -74,13 +74,13 @@ describe("Submit Button Tests", () => {
   });
 
   it("Happy path for a correct sheet with invalid records and valid email", async () => {
-    let createString =
-      "GIVEN I am on the home page of CVM, \n" +
-      "WHEN I upload a correct sheet with invalid records and click to submit, \n" +
-      "THEN I can get success";
-    if (allure._allure.getCurrentSuite()) {
-      allure.description(createString);
-    }
+    // let createString =
+    //   "GIVEN I am on the home page of CVM, \n" +
+    //   "WHEN I upload a correct sheet with invalid records and click to submit, \n" +
+    //   "THEN I can get success";
+    // if (allure._allure.getCurrentSuite()) {
+    //   allure.description(createString);
+    // }
     fs.readFile(
       "fixtures/sheets/valid-sheets-invalid-data.json",
       async (err, data) => {
